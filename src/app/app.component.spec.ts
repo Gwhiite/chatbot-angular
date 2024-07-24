@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'chatbot-angular' title`, () => {
+  it(`should have the 'chatbot-ui' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('chatbot-angular');
+    expect(app.title).toEqual('chatbot-ui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, chatbot-angular');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, chatbot-ui');
   });
 });
